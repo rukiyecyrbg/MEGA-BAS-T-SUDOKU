@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <link rel="stylesheet" href="lib/style.css">
+    <script src="lib/script.js"></script>
+<style>
+table{
+//Çerçevelerin etrafındaki boşlukları kaldırır ve tek bir sınır çizer.
+//border-collapse:collapse;
+background-color:#FFEBF5;
+margin-left:auto; 
+margin-right:auto;
+}
+h1{
+  text-align:center;
+  //background-color:#FFEBF5;
+  color:pink;
+  text-shadow: 2px 4px grey;
+}
+.s2{
+width:30px;
+height:30px;
+background-color:pink;
+text-align:center;
+border: 1px solid pink;
+border-radius:50px 10px 50px;
+//border-bottom-right-radius:5px;
+}
+.s1{
+width: 30px;
+height:30px;
+background-color:#ffcbdb;
+//background-color:#FFC6EF;
+border-radius:25px 40px 30px 50px;
+}
+.r1{
+  height:10px;
+  background-color:#ffcbdb;
+  border-radius:60px;
+}
+footer{
+  text-align:center;
+  text-decoration: underline wavy;
+}
+</style>
+</head>
+<body>
+
+<table>
+<h1>SUDOKU</h1>
+<tr><td class="r1" colspan=15></td></tr>
+<tr><td class="s1" ></td>
+    <td class="s2">1</td>
+    <td class="s2">2</td>
+    <td class="s2">3</td>
+    <td class="s1"></td>
+    <td class="s2">4</td>
+    <td class="s2">5</td>
+    <td class="s2">6</td>
+    <td class="s1"></td>
+    <td class="s2">7</td>
+    <td class="s2">8</td>
+    <td class="s2">9</td>
+    <td class="s1"></td>
+</tr>
+<tr><td class="s1"></td>
+    <td class="s2">4</td>
+    <td class="s2">5</td>
+    <td class="s2">6</td>
+    <td class="s1"></td>
+    <td class="s2">7</td>
+    <td class="s2">8</td>
+    <td class="s2">9</td>
+    <td class="s1"></td>
+    <td class="s2">3</td>
+    <td class="s2">2</td>
+    <td class="s2">1</td>
+    <td class="s1"></td>
+    </tr>
+<tr><td class="s1"></td>
+    <td class="s2">7</td>
+    <td class="s2">8</td>
+    <td class="s2">9</td>
+    <td class="s1"></td>
+    <td class="s2">3</td>
+    <td class="s2">2</td>
+    <td class="s2">1</td>
+    <td class="s1"></td>
+    <td class="s2">4</td>
+    <td class="s2">5</td>
+    <td class="s2">6</td>
+    <td class="s1"></td>
+    </tr>
+<tr><td class="r1" colspan=15></td></tr>
+<tr><td class="s1" ></td>
+    <td class="s2">1</td>
+    <td class="s2">2</td>
+    <td class="s2">3</td>
+    <td class="s1"></td>
+    <td class="s2">4</td>
+    <td class="s2">5</td>
+    <td class="s2">6</td>
+    <td class="s1"></td>
+    <td class="s2">7</td>
+    <td class="s2">8</td>
+    <td class="s2">9</td>
+    <td class="s1"></td>
+</tr>
+<tr><td class="s1"></td>
+    <td class="s2">4</td>
+    <td class="s2">5</td>
+    <td class="s2">6</td>
+    <td class="s1"></td>
+    <td class="s2">7</td>
+    <td class="s2">8</td>
+    <td class="s2">9</td>
+    <td class="s1"></td>
+    <td class="s2">3</td>
+    <td class="s2">2</td>
+    <td class="s2">1</td>
+    <td class="s1"></td>
+    </tr>
+<tr><td class="s1"></td>
+    <td class="s2">7</td>
+    <td class="s2">8</td>
+    <td class="s2">9</td>
+    <td class="s1"></td>
+    <td class="s2">3</td>
+    <td class="s2">2</td>
+    <td class="s2">1</td>
+    <td class="s1"></td>
+    <td class="s2">4</td>
+    <td class="s2">5</td>
+    <td class="s2">6</td>
+    <td class="s1"></td>
+    </tr>
+<tr><td class="r1" colspan=15></td>
+<tr><td class="s1" ></td>
+    <td class="s2">1</td>
+    <td class="s2">2</td>
+    <td class="s2">3</td>
+    <td class="s1"></td>
+    <td class="s2">4</td>
+    <td class="s2">5</td>
+    <td class="s2">6</td>
+    <td class="s1"></td>
+    <td class="s2">7</td>
+    <td class="s2">8</td>
+    <td class="s2">9</td>
+    <td class="s1"></td>
+</tr>
+<tr><td class="s1"></td>
+    <td class="s2">4</td>
+    <td class="s2">5</td>
+    <td class="s2">6</td>
+    <td class="s1"></td>
+    <td class="s2">7</td>
+    <td class="s2">8</td>
+    <td class="s2">9</td>
+    <td class="s1"></td>
+    <td class="s2">3</td>
+    <td class="s2">2</td>
+    <td class="s2">1</td>
+    <td class="s1"></td>
+    </tr>
+<tr><td class="s1"></td>
+    <td class="s2">7</td>
+    <td class="s2">8</td>
+    <td class="s2">9</td>
+    <td class="s1"></td>
+    <td class="s2">3</td>
+    <td class="s2">2</td>
+    <td class="s2">1</td>
+    <td class="s1"></td>
+    <td class="s2">4</td>
+    <td class="s2">5</td>
+    <td class="s2">6</td>
+    <td class="s1"></td>
+    </tr>
+<tr><td class="r1" colspan=15></td></tr>
+</table>
+</div>
+</body>
+ <footer>&copy; RUKİYE ÇAYIRBAĞ </footer>
+</html>
